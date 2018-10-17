@@ -15,6 +15,7 @@
 		D8197C5A216D64990059FB5B /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8197C59216D64990059FB5B /* ContactTableViewCell.swift */; };
 		D8197C5C216D711B0059FB5B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8197C5B216D711B0059FB5B /* DetailViewController.swift */; };
 		D8B7DA6D217793E300B5C186 /* StudentsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B7DA6C217793E300B5C186 /* StudentsCollectionViewController.swift */; };
+		D8B7DA6F21779B7F00B5C186 /* StudentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B7DA6E21779B7F00B5C186 /* StudentsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D8197C59216D64990059FB5B /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		D8197C5B216D711B0059FB5B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D8B7DA6C217793E300B5C186 /* StudentsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsCollectionViewController.swift; sourceTree = "<group>"; };
+		D8B7DA6E21779B7F00B5C186 /* StudentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D8197C59216D64990059FB5B /* ContactTableViewCell.swift */,
 				D8197C5B216D711B0059FB5B /* DetailViewController.swift */,
 				D8B7DA6C217793E300B5C186 /* StudentsCollectionViewController.swift */,
+				D8B7DA6E21779B7F00B5C186 /* StudentsCollectionViewCell.swift */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				D8197C5A216D64990059FB5B /* ContactTableViewCell.swift in Sources */,
 				D8197C4A216D5EA00059FB5B /* ViewController.swift in Sources */,
+				D8B7DA6F21779B7F00B5C186 /* StudentsCollectionViewCell.swift in Sources */,
 				D8197C48216D5EA00059FB5B /* AppDelegate.swift in Sources */,
 				D8B7DA6D217793E300B5C186 /* StudentsCollectionViewController.swift in Sources */,
 				D8197C5C216D711B0059FB5B /* DetailViewController.swift in Sources */,

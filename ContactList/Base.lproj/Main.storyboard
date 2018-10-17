@@ -108,20 +108,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.23921568630000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3AM-UN-gHR">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="152" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="Vc4-V9-JuF">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="152" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5nJ-3Y-CyW">
+                                            <rect key="frame" x="0.0" y="0.0" width="152" height="122"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFK-tx-eUd">
+                                            <rect key="frame" x="0.0" y="130" width="152" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="NBo-4J-aj6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VFK-tx-eUd" firstAttribute="leading" secondItem="Vc4-V9-JuF" secondAttribute="leading" id="116-BV-k5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="5nJ-3Y-CyW" secondAttribute="trailing" id="Kzf-bp-5cX"/>
+                                    <constraint firstItem="VFK-tx-eUd" firstAttribute="top" secondItem="5nJ-3Y-CyW" secondAttribute="bottom" constant="8" symbolic="YES" id="LUU-17-xET"/>
+                                    <constraint firstItem="5nJ-3Y-CyW" firstAttribute="top" secondItem="Vc4-V9-JuF" secondAttribute="top" id="Z3s-tG-lci"/>
+                                    <constraint firstItem="5nJ-3Y-CyW" firstAttribute="leading" secondItem="Vc4-V9-JuF" secondAttribute="leading" id="hGw-Gu-V7Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="VFK-tx-eUd" secondAttribute="trailing" id="ifU-Lk-lKB"/>
+                                    <constraint firstAttribute="bottom" secondItem="VFK-tx-eUd" secondAttribute="bottom" id="mi7-Mt-fha"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -132,7 +155,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHR-XJ-VpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="-556"/>
+            <point key="canvasLocation" x="1858.4000000000001" y="-556.37181409295351"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="UPH-Ze-WgI">

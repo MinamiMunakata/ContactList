@@ -14,7 +14,9 @@ class StudentsCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      let width = ( view.frame.size.width - 20 ) / 3
+      let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+      layout.itemSize = CGSize(width: width, height: width)
     }
 
   // DataSource - how we display cells ...
