@@ -10,4 +10,6 @@ import UIKit
 
 class StudentsCollectionViewCell: UICollectionViewCell {
     
+  @IBOutlet weak var profileImage: UIImageView!
+  @IBOutlet weak var nameLabel: UILabel!
 }

@@ -114,7 +114,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="Vc4-V9-JuF">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="Vc4-V9-JuF" customClass="StudentsCollectionViewCell" customModule="ContactList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="152" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -145,6 +145,10 @@
                                     <constraint firstAttribute="trailing" secondItem="VFK-tx-eUd" secondAttribute="trailing" id="ifU-Lk-lKB"/>
                                     <constraint firstAttribute="bottom" secondItem="VFK-tx-eUd" secondAttribute="bottom" id="mi7-Mt-fha"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="nameLabel" destination="VFK-tx-eUd" id="slU-Pd-XJA"/>
+                                    <outlet property="profileImage" destination="5nJ-3Y-CyW" id="uaL-tX-r4E"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

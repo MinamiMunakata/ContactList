@@ -27,7 +27,6 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Details", let detailVC = segue.destination as? DetailViewController {
             if let cell = sender as? ContactTableViewCell, let indexPath = myTableView.indexPath(for: cell) {
-                let selectedIndex = indexPath.row
                 let name = ViewController.contacts[indexPath.row][0]
                 let country = ViewController.contacts[indexPath.row][1]
                 detailVC.name = name

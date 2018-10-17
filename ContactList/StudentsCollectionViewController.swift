@@ -17,7 +17,25 @@ class StudentsCollectionViewController: UICollectionViewController {
       let width = ( view.frame.size.width - 20 ) / 3
       let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
       layout.itemSize = CGSize(width: width, height: width)
+      
+      let refrech = UIRefreshControl()
+      refrech.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
+      collectionView.refreshControl = refrech
     }
+  
+  func addStudent() {
+    // update our model
+    ViewController.contacts.append(["Yoshi", "Japan"])
+    // update collectionView
+    let indexPath = IndexPath(item: ViewController.contacts.count - 1, section: 0)
+    collectionView.insertItems(at: [indexPath])
+  }
+  @objc
+  func refresh() {
+    // add 1 more extra student
+    addStudent()
+    collectionView.refreshControl?.endRefreshing() // end
+  }
 
   // DataSource - how we display cells ...
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -26,8 +44,10 @@ class StudentsCollectionViewController: UICollectionViewController {
   
   // Delegate - what to do ...
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! StudentsCollectionViewCell
     // configure cell
+    cell.nameLabel.text = ViewController.contacts[indexPath.item][0]
+    cell.profileImage.image = UIImage(named: "placeholder")
     return cell
   }
 }
