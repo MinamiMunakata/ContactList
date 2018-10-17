@@ -21,7 +21,22 @@ class StudentsCollectionViewController: UICollectionViewController {
       let refrech = UIRefreshControl()
       refrech.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
       collectionView.refreshControl = refrech
+      
+      navigationItem.leftBarButtonItem = editButtonItem
     }
+  
+  override func setEditing(_ editing: Bool, animated: Bool) {
+    super.setEditing(editing, animated: animated)
+    collectionView.allowsMultipleSelection = true
+    let indexPaths = collectionView.indexPathsForVisibleItems
+    for indexPath in indexPaths {
+      let cell = collectionView.cellForItem(at: indexPath) as! StudentsCollectionViewCell
+      cell.isEditing = editing
+    }
+    
+    
+    
+  }
   
   func addStudent() {
     // update our model

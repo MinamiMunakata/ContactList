@@ -122,32 +122,44 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="5nJ-3Y-CyW">
-                                            <rect key="frame" x="0.0" y="0.0" width="152" height="122"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="152" height="121"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kenta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFK-tx-eUd">
-                                            <rect key="frame" x="0.0" y="130" width="152" height="20"/>
+                                            <rect key="frame" x="0.0" y="129" width="131" height="21"/>
+                                            <color key="backgroundColor" red="0.16078431369999999" green="0.23921568630000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="NBo-4J-aj6"/>
+                                                <constraint firstAttribute="height" constant="21" id="NBo-4J-aj6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-He-ilb">
+                                            <rect key="frame" x="131" y="129" width="21" height="21"/>
+                                            <color key="backgroundColor" red="0.16078431369999999" green="0.23921568630000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="E1q-w3-jy4"/>
+                                                <constraint firstAttribute="width" constant="21" id="vef-I5-LcN"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.23921568630000001" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="VFK-tx-eUd" firstAttribute="leading" secondItem="Vc4-V9-JuF" secondAttribute="leading" id="116-BV-k5q"/>
+                                    <constraint firstAttribute="bottom" secondItem="NpH-He-ilb" secondAttribute="bottom" id="AH2-Vf-RG3"/>
                                     <constraint firstAttribute="trailing" secondItem="5nJ-3Y-CyW" secondAttribute="trailing" id="Kzf-bp-5cX"/>
                                     <constraint firstItem="VFK-tx-eUd" firstAttribute="top" secondItem="5nJ-3Y-CyW" secondAttribute="bottom" constant="8" symbolic="YES" id="LUU-17-xET"/>
+                                    <constraint firstItem="NpH-He-ilb" firstAttribute="leading" secondItem="VFK-tx-eUd" secondAttribute="trailing" id="SQs-fs-z72"/>
                                     <constraint firstItem="5nJ-3Y-CyW" firstAttribute="top" secondItem="Vc4-V9-JuF" secondAttribute="top" id="Z3s-tG-lci"/>
                                     <constraint firstItem="5nJ-3Y-CyW" firstAttribute="leading" secondItem="Vc4-V9-JuF" secondAttribute="leading" id="hGw-Gu-V7Q"/>
-                                    <constraint firstAttribute="trailing" secondItem="VFK-tx-eUd" secondAttribute="trailing" id="ifU-Lk-lKB"/>
                                     <constraint firstAttribute="bottom" secondItem="VFK-tx-eUd" secondAttribute="bottom" id="mi7-Mt-fha"/>
+                                    <constraint firstAttribute="trailing" secondItem="NpH-He-ilb" secondAttribute="trailing" id="zMg-9w-M3X"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="nameLabel" destination="VFK-tx-eUd" id="slU-Pd-XJA"/>
                                     <outlet property="profileImage" destination="5nJ-3Y-CyW" id="uaL-tX-r4E"/>
+                                    <outlet property="selectImage" destination="NpH-He-ilb" id="CDn-Vf-YWx"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -246,6 +258,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Unchecked" width="22" height="22"/>
         <image name="placeholder" width="120" height="120"/>
     </resources>
 </document>
