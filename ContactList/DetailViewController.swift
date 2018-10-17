@@ -9,26 +9,26 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel! {
-        didSet {
-            nameLabel.text = name
-        }
+  @IBOutlet weak var profileImage: UIImageView!
+  @IBOutlet weak var nameLabel: UILabel! {
+    didSet {
+      nameLabel.text = name
     }
-    @IBOutlet weak var countryLabel: UILabel! {
-        didSet {
-            countryLabel.text = country
-        }
+  }
+  @IBOutlet weak var countryLabel: UILabel! {
+    didSet {
+      countryLabel.text = country
     }
-    @IBOutlet weak var biography: UITextView!
+  }
+  @IBOutlet weak var biography: UITextView!
+  
+  var name: String!
+  var country: String!
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    var name: String!
-    var country: String!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
+    // Do any additional setup after loading the view.
+  }
+  
+  
 }
