@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hEm-Em-6dP">
+                    <navigationItem key="navigationItem" title="List" id="hEm-Em-6dP">
                         <barButtonItem key="rightBarButtonItem" systemItem="organize" id="pnX-2L-ZDZ">
                             <connections>
                                 <segue destination="TRS-CL-APa" kind="show" id="2fo-rd-AkF"/>
@@ -99,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
         </scene>
-        <!--Students Collection View Controller-->
+        <!--Collection-->
         <scene sceneID="q2Z-Li-z4U">
             <objects>
-                <collectionViewController id="TRS-CL-APa" customClass="StudentsCollectionViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Collection" id="TRS-CL-APa" customClass="StudentsCollectionViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="A5b-nD-s25">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="1849" y="-695"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="UPH-Ze-WgI">
             <objects>
-                <viewController id="Uqk-xz-ywv" customClass="DetailViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detail" id="Uqk-xz-ywv" customClass="DetailViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbv-Fv-cLB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,6 +204,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAt-jb-Rdy">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="49"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="name"/>
                                         <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -277,6 +278,6 @@
         <image name="placeholder" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4cE-Qm-X9O"/>
+        <segue reference="q5c-dl-C4a"/>
     </inferredMetricsTieBreakers>
 </document>
